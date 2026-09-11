@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --ink: #172026;
+  --muted: #657278;
+  --paper: #f5f0e8;
+  --panel: #fffaf1;
+  --line: #d9d0c3;
+  --coral: #e75b45;
+  --teal: #138a8b;
+  --yellow: #f0ba43;
+  --shadow: 6px 6px 0 rgba(23, 32, 38, .12);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: radial-gradient(circle at 12% 8%, #fff8d9 0 13%, transparent 30%), linear-gradient(135deg, #eee9df, var(--paper));
+  font-family: 'Space Mono', monospace;
+}
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none; opacity: .3; background-image: linear-gradient(rgba(23,32,38,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(23,32,38,.04) 1px, transparent 1px); background-size: 28px 28px; }
+.game-shell { position: relative; width: min(100% - 32px, 900px); margin: 0 auto; padding: 56px 0 40px; }
+.intro { margin-bottom: 30px; }
+.eyebrow, .panel-label { color: var(--teal); font-size: .72rem; font-weight: 700; letter-spacing: .16em; }
+h1 { margin: 4px 0 2px; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(4.5rem, 12vw, 8rem); line-height: .78; letter-spacing: .02em; font-weight: 800; }
+.subtitle { margin: 20px 0 0; color: var(--muted); font-size: .8rem; }
+.game-layout { display: grid; grid-template-columns: minmax(300px, 1fr) 260px; gap: 32px; align-items: start; }
+.board-wrap { position: relative; width: 300px; max-width: 100%; margin: 0 auto; border: 8px solid var(--ink); background: #202b31; box-shadow: var(--shadow); }
+#game-board { display: block; width: 100%; height: auto; }
+.sidebar { display: grid; gap: 14px; }
+.panel { padding: 18px; border: 2px solid var(--ink); background: var(--panel); box-shadow: 3px 3px 0 rgba(23,32,38,.1); }
+.score-panel > strong { display: block; margin: 8px 0 16px; font-family: 'Barlow Condensed', sans-serif; font-size: 3.6rem; line-height: .85; }
+.stats-row { display: flex; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; }
+.stats-row + .stats-row { margin-top: 9px; }
+.stats-row strong { color: var(--ink); }
+.next-panel { display: grid; justify-items: start; }
+#next-piece { margin-top: 12px; background: #f0eadf; }
+.controls-panel p { margin: 13px 0 0; color: var(--muted); font-size: .65rem; line-height: 1.5; }
+kbd { display: inline-block; min-width: 22px; margin-right: 4px; padding: 3px 5px; border: 1px solid var(--line); background: #f0eadf; color: var(--ink); font-size: .6rem; text-align: center; }
+.button { width: 100%; padding: 13px 16px; border: 2px solid var(--ink); font: 700 .75rem 'Space Mono', monospace; cursor: pointer; transition: transform .15s, box-shadow .15s; }
+.button:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+.primary { background: var(--coral); color: white; }
+.secondary { background: var(--yellow); color: var(--ink); }
+.mobile-controls { display: none; }
+.game-message { position: absolute; inset: 0; display: grid; place-content: center; gap: 12px; padding: 26px; background: rgba(23,32,38,.9); color: white; text-align: center; }
+.game-message strong { font: 800 2.4rem 'Barlow Condensed', sans-serif; }
+.game-message span { color: #d7dfdd; font-size: .7rem; line-height: 1.6; }
+.game-message .button { margin-top: 6px; }
+.hidden { display: none; }
+@media (max-width: 700px) {
+  .game-shell { padding-top: 34px; }
+  .intro { text-align: center; }
+  .game-layout { grid-template-columns: 1fr; gap: 20px; }
+  .sidebar { grid-template-columns: 1fr 1fr; }
+  .score-panel, .next-panel { min-height: 150px; }
+  .controls-panel { grid-column: 1 / -1; display: none; }
+  .sidebar > .button { min-height: 48px; }
+  .mobile-controls { display: grid; grid-template-columns: repeat(4, 1fr) 1.35fr; gap: 8px; margin-top: 22px; }
+  .control-button { min-height: 48px; border: 2px solid var(--ink); background: var(--panel); box-shadow: 3px 3px 0 rgba(23,32,38,.12); color: var(--ink); font: 700 1.2rem 'Space Mono', monospace; cursor: pointer; }
+  .control-button.accent { background: var(--teal); color: white; }
+  .control-button.drop { background: var(--coral); color: white; font-size: .68rem; }
+}

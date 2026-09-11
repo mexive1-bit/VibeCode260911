@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStart Quiz</title>
+  <link rel="stylesheet" href="study-style.css">
+  <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body class="quiz-page">
+  <header class="site-header"><a class="logo" href="DemoPage.html"><span class="logo-mark">&lt;/&gt;</span><span>WebStart</span></a><a class="back-link" href="DemoPage.html">← 학습으로 돌아가기</a></header>
+  <main class="quiz-main">
+    <div class="quiz-intro"><p class="kicker">MINI QUIZ / 03 QUESTIONS</p><h1>배운 내용을<br><em>가볍게 확인해요.</em></h1><p>정답을 고르면 바로 결과를 알려드릴게요.</p></div>
+    <section class="quiz-box" aria-live="polite"><div class="quiz-top"><span id="question-number">QUESTION 1 / 3</span><span id="score-label">SCORE 0</span></div><div class="progress-track"><span id="progress-bar"></span></div><h2 id="question-text"></h2><div id="answer-list" class="answer-list"></div><p id="feedback" class="feedback"></p><button id="next-button" class="primary-button next-button" type="button" disabled>다음 문제 <span>→</span></button></section>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+</html>

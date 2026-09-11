@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKY//RAID - 종스크롤 슈팅</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <span class="brand-mark">SR</span>
+        <div><p class="eyebrow">VERTICAL COMBAT SIMULATION</p><h1>SKY<span>//</span>RAID</h1></div>
+      </div>
+      <div class="top-status"><span class="status-dot"></span><span id="mission-status">MISSION ACTIVE</span></div>
+    </header>
+
+    <section class="game-frame" aria-label="Sky Raid 종스크롤 슈팅 게임">
+      <aside class="hud hud-left">
+        <div class="hud-block"><span class="hud-label">SCORE</span><strong id="score">000000</strong></div>
+        <div class="hud-block"><span class="hud-label">HIGH SCORE</span><strong id="high-score">000000</strong></div>
+        <div class="hud-block"><span class="hud-label">WAVE</span><strong id="wave">01</strong></div>
+      </aside>
+      <div class="canvas-wrap">
+        <canvas id="game-canvas" width="480" height="720" aria-label="게임 화면"></canvas>
+        <div id="start-screen" class="screen-panel">
+          <p class="eyebrow">SECTOR 07 / AIRSPACE BREACH</p>
+          <h2>SKY<span>//</span>RAID</h2>
+          <p>하늘을 가르고, 지상을 폭격하라.</p>
+          <button id="start-button" class="action-button">출격하기 <span>ENTER</span></button>
+          <small>이동 WASD / 방향키 · 공중 사격 J · 지상 폭격 K</small>
+        </div>
+        <div id="pause-screen" class="screen-panel hidden"><p class="eyebrow">FLIGHT SYSTEM</p><h2>PAUSED</h2><p>잠시 숨을 고르고 다시 출격하세요.</p><button id="resume-button" class="action-button">계속하기 <span>P</span></button></div>
+        <div id="game-over-screen" class="screen-panel hidden"><p class="eyebrow">SIGNAL LOST</p><h2>MISSION FAILED</h2><p id="final-score">최종 점수 000000</p><button id="restart-button" class="action-button">재출격 <span>R</span></button></div>
+      </div>
+      <aside class="hud hud-right">
+        <div class="hud-block"><span class="hud-label">ARMOR</span><div id="armor" class="armor-bar"><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="hud-block"><span class="hud-label">AIR / GROUND</span><strong class="weapon-readout"><b id="air-ammo">∞</b><b id="ground-ammo">03</b></strong><div class="weapon-lines"><span>VULCAN</span><span>GLIDE BOMB</span></div></div>
+        <div class="hud-block upgrade-readout"><span class="hud-label">AIRCRAFT LV</span><strong id="upgrade-level">01</strong><span id="upgrade-name">STANDARD</span></div>
+        <div class="hud-block legend"><span class="legend-item"><i class="legend-air"></i> AIR TARGET</span><span class="legend-item"><i class="legend-ground"></i> GROUND TARGET</span></div>
+      </aside>
+    </section>
+
+    <footer class="footer-bar"><span>SECTOR 07 // OPERATION NIGHTFALL</span><span>ARROWS / WASD TO PILOT &nbsp; SPACE TO FIRE &nbsp; X TO BOMB</span></footer>
+    <div class="touch-controls" aria-label="모바일 조작"><button data-control="left">←</button><button data-control="fire">FIRE</button><button data-control="bomb">BOMB</button><button data-control="right">→</button></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

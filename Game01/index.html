@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockfall - 테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro">
+      <p class="eyebrow">HTML5 / CSS3 / JAVASCRIPT</p>
+      <h1>BLOCKFALL</h1>
+      <p class="subtitle">떨어지는 블록을 맞춰 줄을 완성하세요.</p>
+    </section>
+
+    <section class="game-layout" aria-label="테트리스 게임">
+      <div class="board-wrap">
+        <canvas id="game-board" width="300" height="600" aria-label="테트리스 게임 보드"></canvas>
+        <div id="game-message" class="game-message hidden">
+          <strong id="message-title">게임 오버</strong>
+          <span id="message-text">다시 시작해서 최고 기록에 도전하세요.</span>
+          <button id="restart-overlay" class="button primary">다시 시작</button>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="panel score-panel">
+          <span class="panel-label">SCORE</span>
+          <strong id="score">0</strong>
+          <div class="stats-row"><span>줄</span><strong id="lines">0</strong></div>
+          <div class="stats-row"><span>레벨</span><strong id="level">1</strong></div>
+        </div>
+
+        <div class="panel next-panel">
+          <span class="panel-label">NEXT BLOCK</span>
+          <canvas id="next-piece" width="120" height="120" aria-label="다음 블록"></canvas>
+        </div>
+
+        <div class="panel controls-panel">
+          <span class="panel-label">CONTROLS</span>
+          <p><kbd>←</kbd><kbd>→</kbd> 이동</p>
+          <p><kbd>↑</kbd> 회전 <kbd>↓</kbd> 빠르게</p>
+          <p><kbd>SPACE</kbd> 즉시 내리기</p>
+          <p><kbd>P</kbd> 일시정지</p>
+        </div>
+
+        <button id="restart-button" class="button primary">새 게임</button>
+        <button id="pause-button" class="button secondary">일시정지</button>
+      </aside>
+    </section>
+
+    <div class="mobile-controls" aria-label="모바일 게임 조작">
+      <button data-action="left" class="control-button" aria-label="왼쪽 이동">&#8592;</button>
+      <button data-action="rotate" class="control-button accent" aria-label="회전">&#8635;</button>
+      <button data-action="right" class="control-button" aria-label="오른쪽 이동">&#8594;</button>
+      <button data-action="down" class="control-button" aria-label="빠르게 내리기">&#8595;</button>
+      <button data-action="drop" class="control-button drop" aria-label="즉시 내리기">DROP</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

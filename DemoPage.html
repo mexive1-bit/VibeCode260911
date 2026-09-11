@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStart | HTML · CSS · JavaScript</title>
+  <link rel="stylesheet" href="study-style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="DemoPage.html"><span class="logo-mark">&lt;/&gt;</span><span>WebStart</span></a>
+    <nav class="main-nav" aria-label="주 메뉴">
+      <a class="nav-link active" href="#home">홈</a>
+      <a class="nav-link" href="#html">HTML</a>
+      <a class="nav-link" href="#css">CSS</a>
+      <a class="nav-link" href="#javascript">JavaScript</a>
+      <a class="nav-link quiz-nav" href="quiz.html">퀴즈 풀기 <span>→</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="kicker">FRONTEND BASICS / 01</p>
+        <h1>웹의 기초를<br><em>가볍게 시작해요.</em></h1>
+        <p class="hero-description">HTML로 뼈대를 세우고, CSS로 꾸미고,<br>JavaScript로 움직임을 더해보세요.</p>
+        <a class="primary-button" href="#html">학습 시작하기 <span>↓</span></a>
+      </div>
+      <div class="code-art" aria-label="HTML CSS JavaScript를 표현한 장식">
+        <div class="code-window">
+          <div class="window-bar"><i></i><i></i><i></i><span>my-first-page.html</span></div>
+          <pre><span class="tag">&lt;h1&gt;</span><span class="text">Hello, web!</span><span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="value">"start"</span><span class="tag">&gt;</span>
+  Click me
+<span class="tag">&lt;/button&gt;</span></pre>
+        </div>
+        <span class="sticker sticker-html">HTML</span><span class="sticker sticker-css">CSS</span><span class="sticker sticker-js">JS</span>
+      </div>
+    </section>
+
+    <section class="section-wrap learning-path" aria-labelledby="path-title">
+      <div class="section-heading"><div><p class="kicker">YOUR LEARNING PATH</p><h2 id="path-title">세 가지 언어, 한 번에 이해하기</h2></div><span class="progress-label">3 LESSONS</span></div>
+      <div class="topic-grid">
+        <a id="html" class="topic-card card-yellow" href="#html-detail"><span class="topic-number">01</span><span class="topic-icon">&lt;/&gt;</span><h3>HTML</h3><p>웹 페이지의 구조와<br>의미를 만드는 언어</p><span class="card-arrow">→</span></a>
+        <a id="css" class="topic-card card-pink" href="#css-detail"><span class="topic-number">02</span><span class="topic-icon">✦</span><h3>CSS</h3><p>색상, 간격, 배치로<br>페이지를 디자인하는 언어</p><span class="card-arrow">→</span></a>
+        <a id="javascript" class="topic-card card-blue" href="#js-detail"><span class="topic-number">03</span><span class="topic-icon">{ }</span><h3>JavaScript</h3><p>클릭과 입력에 반응하는<br>동작을 만드는 언어</p><span class="card-arrow">→</span></a>
+      </div>
+    </section>
+
+    <section class="section-wrap lesson-notes" aria-label="학습 요약">
+      <article id="html-detail" class="note-row"><span class="note-badge yellow">HTML</span><div><h2>콘텐츠의 뼈대</h2><p><code>&lt;h1&gt;</code>은 제목, <code>&lt;p&gt;</code>는 문단처럼 태그로 콘텐츠의 의미와 구조를 알려줍니다.</p></div></article>
+      <article id="css-detail" class="note-row"><span class="note-badge pink">CSS</span><div><h2>보기 좋은 화면</h2><p><code>color</code>, <code>padding</code>, <code>display</code> 같은 속성으로 요소의 모습을 바꿉니다.</p></div></article>
+      <article id="js-detail" class="note-row"><span class="note-badge blue">JS</span><div><h2>살아있는 상호작용</h2><p>버튼을 클릭했을 때 문구를 바꾸는 것처럼, 사용자의 행동에 맞춰 화면을 변화시킵니다.</p></div></article>
+    </section>
+
+    <section class="quiz-banner section-wrap"><div><p class="kicker">READY TO CHECK?</p><h2>배운 내용을<br>퀴즈로 확인해보세요.</h2></div><a class="secondary-button" href="quiz.html">퀴즈 시작하기 <span>→</span></a></section>
+  </main>
+
+  <footer class="site-footer section-wrap"><span>WebStart</span><span>작은 코드에서 시작하는 웹 공부</span></footer>
+  <script src="study.js"></script>
+</body>
+</html>
