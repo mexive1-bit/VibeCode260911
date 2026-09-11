@@ -1,0 +1,286 @@
+*AI어시스턴트를 활용한 바이브프로그래밍 
+
+*구글 지메일 계정 생성 
+
+*챗GPT에 가입하기 
+https://chatgpt.com/
+
+*파이썬 사이트, 비주얼스튜디오 코드 사이트 
+https://www.python.org/
+https://code.visualstudio.com/
+
+*깃허브에 개발자 계정이 필요함
+https://github.com/
+
+*파이썬 문법을 공부하는 경우 참고 자료: 위키독스
+https://wikidocs.net/
+
+*Git(깃)과 GitHub(깃허브) 세팅: 소스코드를 백업, 버전관리, 협업
+https://git-scm.com/   git을 프로그램 받아서 설치한다.  
+https://github.com/  깃허브에 계정을 생성한다. (마소가 인수)  
+
+*커맨드 창을 오픈해서 아래와 같이 작업한다. 
+c:\work
+cmd
+git init
+git add .
+
+
+개발자 이메일주소와 이름을 등록해야 한다.  
+git config --global user.email "papasmf1@gmail.com"
+git config --global user.name "papasmf1"
+
+git commit -m "first commit"
+git remote add origin https://github.com/papasmf1/python260820.git
+
+git push --set-upstream origin master
+
+(웹브라우져 인증 통과)
+git push
+
+(수동 작업)
+git add . 
+git commit -m "월요일 오후 수업"
+git push
+
+
+*파이썬 설치와 VisualStudio Code설치
+파이썬 3.13 설치 
+Visual Studio Code 설치
+
+*추가로 라이브러리 설치 
+커맨드 창을 오픈해야 한다. 
+cmd
+pip install beautifulsoup4
+pip install requests 
+pip install selenium 
+pip install webdriver_manager
+pip install chromedriver_autoinstaller
+pip install numpy
+pip install scipy
+pip install matplotlib 
+pip install pandas 
+pip install seaborn
+pip install xlrd
+pip install openpyxl
+pip install pyqt5 
+pip install pyside2 
+pip install pyinstaller
+
+pip freeze > requirements.txt
+
+*라이브러리를 한번에 설치할 경우 아래의 파일을 사용한다. 
+cmd 
+pip install -r requirements.txt
+
+
+*OpenAI Codex App 설치하기(필요하면 node.js도 같이 설치한다)
+ https://openai.com/ko-KR/codex/
+
+*Visual Studio code에서 코파일럿 채팅창에 입력한다. 
+HTML5, CSS3, JavaScript를 사용해서 테트리스 게임 코드를 생성해줘. 
+Game01폴더를 만들어서 저장해줘. 
+
+*파이썬의 pygame라이브러리로 생성한 게임 코드를 실행하기 위해서는 추가 설치가 필요하다.
+pip install pygame 
+
+*웹기반의 코드를 파이썬으로 포팅해달라고 한다. 
+기존 HTML5, CSS3, Javascript로 되어 있는 코드를 
+파이썬으로 포팅해줘. 생성된 코드는 DemoSnake.py로 저장해줘. 
+
+*슈팅게임
+html5, css3, javascript기반으로 제비우스같은 종스크롤 게임을 생성해줘,
+Game02폴더를 먼저 만들고 파일을 저장해줘.
+
+*파이썬에서 pygame라이브러리를 사용해서 뱀게임 코드를 작성해줘.
+10마리의 뱀이 서로서로 경쟁하고, 더큰 스코어를 가지고 있는 뱀이 작은 뱀을 잡아 먹을 수 있도록 해줘.
+속도업, 무적, 숨기 등의 아이템을 적용해주고 최종 1마리가 남았을때 승리 하도록 만들어줘. 
+생성된 코드의 파일명은 MySnake.py로 저장해줘 
+
+*아래와 같이 로직을 변경할 수 있다. 
+2마리의 뱀이 서로 경쟁하면서 사과를 먹도록 사람과 기계가 같이 경쟁하도록 
+코드를 수정해줘
+
+*HTML공부하기
+html5, css3, javascript를 간단하게 공부할 수 있는 페이지를 하나 생성해줘.
+이름은 메인페이지는 DemoPage.html로 저장해줘.
+메뉴를 각각 만들어주고, 퀴즈를 풀 수 있는 페이지도 추가해주면 좋겠어.
+파스텔톤으로 심플한 디자인으로 만들어줘.
+
+
+
+*파이썬의 클래스 코드를 생성하기 
+파이썬에서 부모 클래스로 Person을 정의하고, 자식 클래스로 Manager, Employee, Alba클래스 를 정의하려고 한다. Person의 멤버변수는 id, name이고, 이러한 멤버변수를 출력하는 printInfo() 인스턴스메서드가 정의되어 있다. Manager에는 skill, title멤버변수가 추가되어 있고, Employee 에는 title만 추가되어 있다. 이러한 파이썬의 클래스 코드를 생성해줘.
+파일명은 MyPerson.py로 저장해줘. 
+
+*파이썬에서 SQLite를 사용하는 SQL구문 생성하기
+파이썬에서 SQLite를 사용하면서 제품 데이터를 다루는 테이블에 입출력하는 코드를 작성하려고 한다. Products라는 테이블에 productID (integer), productName (text), productPrice (integer) 등의 컬럼을 가지고 있는 형태의 코드로 테이블을 생성해서 입력, 수정, 삭제, 검색하는 코드를 생성해줘. productID는 자동 증가 속성이 있고, 생성된 코드의 파일명은 
+MyProducts.py로 저장해줘 
+
+파이썬에서 PyQt6을 사용해서 GUI기반의 화면으로 만들고, 데이터를 입력하면 하단의 리스트에 보여지는 데이터를 엑셀 파일로 저장하는 기능을 openpyxl을 사용해서 추가하고 버튼도 추가해줘
+
+*GUI를 추가해서 실행파일로 만들기 
+cmd 
+pip install pyinstaller 
+pyinstaller --noconsole --onefile MyProducts.py
+
+*스타일을 입히기
+ERP 시스템과 같은 스타일을 적용해줘. 그리고 상품 입력이 정상적으로 입력이 되면 커서가 다시 상품명으로 가도록 설정해주고, 여러건을 삭제 할 수 있도록 체크박스도 만들어줘.
+
+*엑셀파일에 저장하기 
+파이썬으로 openpyxl을 사용해서 전자제품데이터를 100건 생성해줘.
+제품ID, 제품명, 가격, 수량컬럼을 만들어서 MyProducts.xlsx파일로 저장해줘 
+
+위의 생성된 코드에서 전자제품이 아닌 건강제품 데이터로 변경해줘
+
+
+(미리 설치)
+pip install python-pptx
+
+출력된 차트를 파이썬의 라이브러리를 사용해서 PPT파일을 만들어서 저장해줘
+
+
+
+*To-Do-List웹사이트를 생성 
+to do list 웹페이지를 일단은 디자인만 생성해줘 
+
+HTML5, CSS3, JavaScript기반으로 To do list페이지를 생성하는데 일단은 디자인만 생성해줘
+
+디자인이 너무 밋밋한데 tailwind css를 사용해서 파스텔톤으로 좀 더 멋지게 페이지를 변경해줘
+디자인이 너무 밋밋한데 tailwind css를 사용해서 에어 글래스로 좀 더 멋지게 페이지를 변경해줘
+
+이번에는 일정을 추가하고 삭제할 수 있는 기능을 모두 구현해줘
+
+
+*개발자를 위한 포트폴리오 웹사이트 만들기 
+개발자의 이름은 김종덕이고, papasmf1@gmail.com을 이메일 주소로 사용함. 
+프론트엔드, 백엔드개발을 하는 개발자의 포트폴리오 웹사이트를 생성해줘. 
+DemoPort라는 폴더를 만들어서 생성된 파일들을 저장해줘. 
+
+
+*웹상의 데이터를 크롤링
+https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=AI&oquery=AI%5C&tqi=jbh9Cdqo1SCssDDWnaGssssstIN-045342&ackey=r0afict9
+
+파이썬으로 위의 주소를 사용해서 신문 기사의 내용을 크롤링하는 코드를 작성해줘.  
+라이브러리는 BeautifulSoup을 사용해서 작성해줘
+
+크롤링한 결과를 openpyxl을 사용해서 naverResult.xlsx 파일로 저장하는 코드도 추가해줘.
+
+파이썬의 PyQt6를 사용해서 GUI기반으로 코드를 변경해줘
+
+*파일 다운로드를 자동으로 분류하는 코드 생성 
+파이썬의 os, os.path, glob모듈등을 사용해서 윈도우 11에서 
+다운로드 받은 폴더의 파일을 4가지로 자동 분류하는 코드를 작성해줘. 
+*.jpeg, *.jpg, *.JPEG, *.JPG와 같은 이미지들은 
+c:\Users\ User\Downloads\Images폴더에, 
+*.pdf와 같은 PDF파일들은 c:\Users\User\Downloads\ PDFs폴더에, 
+*.csv, *.tsv, *.xlsx파일들은 c:\Users\User\Downloads\DataSets폴더에,
+*.zip파일들은 c:\Users\User\Downloads\Archives폴더에 분류하는 
+코드를 작성해줘
+
+*이메일 주소 검색하기: 정규표현식을 사용
+파이썬에서 re모듈의 search()함수를 사용해서 이메일 주소를 
+검색하는 코드를 작성해줘. 
+샘플을 10개 추가해서 테스트하는 코드도 작성해줘
+
+
+*네이버 신문기사를 크롤링하는 코드 생성 
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf 8&query=%EB%B0%98%EB%8F%84%EC%B2%B4
+
+위의 주소를 사용해서 파이썬의 BeautifulSoup을 사용해서 신문 기사의 제목을 크롤링하는 코드를 작성해줘
+
+이번에는 생성된 코드에 openpyxl라이브러리를 사용해서 엑셀 파일로 저장해줘. 
+
+
+*코스피200
+
+https://stock.naver.com/market/stock/kr/stocklist/priceTop
+https://finance.naver.com/sise/sise_index.naver?code=KPI200
+위의 주소를 사용해서 파이썬에서 BeautifulSoup을 사용해서 편입종목상위 정보를 크롤링하는 코드를 작성해줘
+생성된 코드는 kospi200.py이름으로 저장해줘.
+
+(태그를 힌트로 제공해야 한다.) 
+위의 태그를 참조해서 코드를 다시 생성해줘
+
+
+편입종목상위의 경우 여러개의 페이지로 구성되어 있는데 페이징 처리를 해서 전체 200개를 
+가지고 오도록 수정해줘
+
+
+파이썬에서 PyQt6를 사용해서 GUI형태의 화면에 리스트로 출력되도록 코드를 수정해줘. 
+QTableWidget을 사용해서 리스트로 출력되도록 생성해줘
+
+크롤링한 결과를 openpyxl을 사용해서 kospi200.xlsx로 저장하는 코드도 추가하고 버튼도 추가해줘.
+
+pyinstaller --noconsole --onefile kospi200.py
+*깃허브 코파일럿을 사용한 데이터 분석과 시각화 자동화 
+파이썬을 사용해서 웹상에서 타이타닉호의 생존 데이터셋을 받아서 분석을 하고, 
+남성과 여성의 생존비율을 바차트 형태로 그려줘. 주피터 노트북 형식으로 생성해줘.
+
+한글이 깨지는데 한글 폰트 문제를 해결해서 다시 차트를 출력해줘
+
+*S&P500 분석 
+위의 파일은 미국 S&P500 지수 파일이야. 파이썬에서 pandas를 사용해서 먼저 데이터 클랜징을 하고 
+다각도로 분석하는 코드를 생성해줘. 
+2000년 1월 초부터 2019년 연말까지 종가 컬럼을 기준으로 라인그래프를 그려줘
+
+한글 폰트가 깨지는 문제를 수정해줘
+
+
+*코시스에서 국내 데이터를 받아서 분석하고 시각화 하기 
+출생아수  ==> 키워드로 검색 
+출생아수, 합계출산율, 자연증가 등 ==> 파일을 다운로드 
+
+위의 출생아수 엑셀 파일을 로딩해서 파이썬의 pandas와 matplotlib을 사용해서 
+1970년에서 2024년까지의 데이터를 분석해줘. 출생아수 컬럼을 라인 그래프로 
+출력하는 코드를 생성해줘. 데이터 클랜징을 먼저하고 분석하는 코드를 작성해줘 
+
+
+마켓컬리의 댓
+https://www.kurly.com/goods/1002063927?collectionCode=26chu-269010
+https://www.kurly.com/goods/1002063927?collectionCode=26chu-269010
+위의 링크에 있는 댓글을 300개(광고로 보이는 댓글들은 제외) 크롤링해서, 긍정적인 의견과 부정적인 의견을 분석해서 기각화하는 코드를 파이썬 기반의 pandas와 matplotlob을 사용해서 차트로 출력해줘
+
+파이썬의 PyQt6을 사용해서 GUI기반의 앱으로 변경해줘. 
+왼쪽에는 댓글 리스트가 출력되고, 오른쪽에는 분석한 차트가 출력되도록 구성해줘.
+
+*추가설치 
+pip install openai
+pip install pillow 
+pip install requests 
+
+*OpenAI API를 사용하기 
+https://platform.openai.com/account/api-keys
+
+(2026년 9월 10일 생성한 키) 
+OPENAI_API_KEY=your_api_key_here
+
+
+*GUI애플리케이션을 부탁한다. 
+파이썬에서 PyQt6를 사용해서 QMainWindow를 상속받는 클래스를 정의해서 
+사진을 업로드하면 OpenAI API를 사용해서 사진에 있는 사물을 해석하는 프로그램을 
+작성해줘 
+
+.env 파일을 생성해주고,  .gitignore 파일도 생성해줘
+OpenAI API키를 이 파일에서 가져가도록 코드를 수정해줘
+
+
+*추가설치
+cmd
+pip install openai
+pip install pillow 
+pip install requests 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
